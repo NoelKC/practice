@@ -1,0 +1,82 @@
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   font-size: 1.6rem;
+   /* font-size 1.6rem is now the same as 16px */
+   font-family: "Fuzzy Bubbles", sans-serif;
+   font-style: normal;
+   line-height: 1.6;
+   font-weight: 400;
+   background: rgb(4, 158, 79);
+   color: antiquewhite;
+   margin: 0;
+}
+
+/* images - centers them & sets sizes */
+.big-img {
+   display: block;
+   margin: auto;
+   max-width: 100%;
+   height: auto;
+}
+
+.reg-img {
+   margin: auto;
+   max-width: 25%;
+   height: auto;
+}
+
+
+/* content wrappers  */
+.content-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   margin: 0 auto;
+   padding: 20px;
+   max-width: 1000px;
+   text-align: center;
+}
+
+.content-bg {
+   background: rgba(0, 48, 7, 0.90);
+   padding: 30px;
+}
+
+/* responsive content */
+@media screen and (max-width:550px) {
+   .content-wrapper {
+      padding: 10px;
+   }
+
+   .content-bg {
+      padding: 10px;
+   }
+}
